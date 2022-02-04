@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+<!--    <script src="js/scripts.js"></script>-->
+
+<script>
+
+$("document").ready(function(){
+
+ $("#append").click(function(){
+ 
+ 
+ $("p:first").append("Hello");
+ 
+ });
+    
+    
+     $("#preppend").click(function(){
+ 
+ 
+ $("p:first").prepend("Hello again from me");
+ 
+ });
+
+    
+
+});
+    
+    
+    
+</script>
+
+
+
+
+</head>
+<body>
+
+<a href="#" id="append">Append</a>
+
+<a href="#" id="preppend">Preppend</a>
+
+   <div id="box">
+       
+       
+       <p>This is the 1</p>
+       <p>This is the 2</p>
+       <p>This is the 3</p>
+       <p>This is the 4</p>
+       <p>This is the 5</p>
+       
+       
+       
+       
+       
+   </div>
+   
+   
+    
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+<!--    <script src="js/scripts.js"></script>-->
+
+<script>
+
+$("document").ready(function(){
+
+ $("#appendTo").click(function(){
+ 
+ 
+ $("#box p:first").appendTo("#box p:last");
+ 
+ });
+    
+    
+$("#preppendTo").click(function(){
+ 
+ $("p:last").prependTo("p:first");
+ 
+ });
+    
+    
+    $("#insertAfter").click(function(){
+ 
+ $("<p>New Para</p>").insertBefore("p:first");
+ 
+ });
+    
+      $("#insertBefore").click(function(){
+ 
+ $("<p>New Para</p>").insertBefore("p:first");
+ 
+ });
+    
+    
+       $("#after").click(function(){
+ 
+ $("#box p:first").before("**");
+ 
+ });
+    
+      $("#before").click(function(){
+ 
+ $("#box p:first").after("**");
+ 
+ });
+
+
+
+    
+
+});
+    
+    
+    
+</script>
+
+
+
+
+</head>
+<body>
+
+<a href="#" id="appendTo">Append</a>
+
+<a href="#" id="preppendTo">Preppend</a>
+   
+<a href="#" id="insertAfter">Insert After</a>
+   
+<a href="#" id="insertBefore">Insert Before</a>
+  
+  <a href="#" id="after">After</a>
+   
+<a href="#" id="before">Before</a>
+   
+
+
+   <div id="box">
+       
+       
+       <p>This is the 1</p>
+       <p>This is the 2</p>
+       <p>This is the 3</p>
+       <p>This is the 4</p>
+       <p>This is the 5</p>
+       
+       
+       
+       
+       
+   </div>
+   
+   
+    
+</body>
+</html>

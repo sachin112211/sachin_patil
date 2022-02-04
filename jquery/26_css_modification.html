@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+<!--    <script src="js/scripts.js"></script>-->
+
+<script>
+
+$("document").ready(function(){
+
+$("#add-class").click(function(){
+
+$("p:first").addClass('color');
+
+});
+    
+    
+    $("#remove-class").click(function(){
+
+$("p:first").removeClass('color');
+
+});
+    
+    
+        $("#toggle-class").click(function(){
+
+$("p:first").toggleClass('color');
+
+});
+
+    
+    
+        $("#increase-size").click(function(){
+
+$("p:first").css("font-size", "+=1px");
+
+});
+
+    
+
+});
+    
+    
+    
+</script>
+<style>
+    
+.color {
+
+    color:red;
+
+}    
+    
+</style>
+
+
+
+</head>
+<body>
+<a id="add-class" href="#">Add Class</a>
+<a id="remove-class" href="#">Remove Class</a>
+<a id="toggle-class" href="#">Toggle Class</a>  
+
+<a id="increase-size" href="#">Increase Size</a>  
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, tempora dolorem vel quo maiores exercitationem suscipit delectus provident velit molestiae officiis, obcaecati nesciunt atque id tempore commodi, vero dignissimos. Doloribus?</p>
+   
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, tempora dolorem vel quo maiores exercitationem suscipit delectus provident velit molestiae officiis, obcaecati nesciunt atque id tempore commodi, vero dignissimos. Doloribus?</p>
+   
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, tempora dolorem vel quo maiores exercitationem suscipit delectus provident velit molestiae officiis, obcaecati nesciunt atque id tempore commodi, vero dignissimos. Doloribus?</p>
+   
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, tempora dolorem vel quo maiores exercitationem suscipit delectus provident velit molestiae officiis, obcaecati nesciunt atque id tempore commodi, vero dignissimos. Doloribus?</p>
+
+   
+   
+   
+    
+</body>
+</html>

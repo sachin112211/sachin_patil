@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+<!--    <script src="js/scripts.js"></script>-->
+
+<script>
+
+$("document").ready(function(){
+    
+    
+//    alert($("#container").html());
+
+
+//    $("#create").click(function(){
+//    
+//    
+//    $("#container p:first").html("<p>Replaced and created this text</p>");
+//    
+//    
+//    });
+    
+    
+       $("#create_text").click(function(){
+    
+    
+    $("#container p:last").text("<p>Replaced and created this text</p>");
+    
+    
+    });
+    
+    
+    
+         $("#create_variable").click(function(){
+             
+        var newText = $('#container p:first');
+    
+    
+    $("#container p:last").html(newText );
+    
+    
+    });
+
+    
+
+});
+    
+    
+    
+</script>
+
+
+
+
+</head>
+<body>
+
+<a id="create" href="#">Create</a>
+
+<a id="create_text" href="#">Create Text</a>
+
+<a id="create_variable" href="#">Create Text</a>
+ 
+ <div id="container">
+     
+     <p> 1- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque porro, explicabo similique, architecto tempora reiciendis possimus eum corrupti necessitatibus maxime voluptas. Illum fuga porro laudantium doloremque veniam velit ex mollitia!</p>
+     
+     
+          <p> 2- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque porro, explicabo similique, architecto tempora reiciendis possimus eum corrupti necessitatibus maxime voluptas. Illum fuga porro laudantium doloremque veniam velit ex mollitia!</p>
+     
+     
+          <p>3 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque porro, explicabo similique, architecto tempora reiciendis possimus eum corrupti necessitatibus maxime voluptas. Illum fuga porro laudantium doloremque veniam velit ex mollitia!</p>
+     
+     
+ </div>
+  
+
+   
+   
+   
+    
+</body>
+</html>

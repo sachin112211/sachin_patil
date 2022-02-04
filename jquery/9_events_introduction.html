@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+<!--    <script src="js/scripts.js"></script>-->
+
+<script>
+    
+       
+$("document").ready(function(){
+
+
+    $("#box").on("click", whenMouseIsClicked);
+    
+    $("#box").on("mouseleave", whenMouseLeaves);
+    
+    
+    function whenMouseIsClicked() {
+    
+    $("#box").html("<h4>Hey you clicked me</h4>");
+    
+    
+    }
+    
+    
+      function whenMouseLeaves() {
+    
+    $("#box").html("<h4>Hey you where are you going</h4>");
+    
+    
+    }
+    
+    
+    
+
+});
+     
+
+</script>
+
+<style>
+
+    #box {
+    
+        width:100px;
+        height: 100px;
+        border: 1px solid black;
+    
+    
+    }
+    
+</style>
+
+
+</head>
+<body>
+   
+   <div id="box">
+       
+       
+       
+       
+   </div>
+   
+   
+    
+</body>
+</html>
